@@ -1,0 +1,14 @@
+schemaVersion: 1.2
+
+endpoints:
+  - name: hello-world
+    displayName: Hello World Service
+    service:
+      basePath: /greeting
+      port: 9090
+    type: REST
+    networkVisibilities: 
+      - Public
+      - Project
+      - Organization
+    schemaFilePath: .choreo/openapi.yaml

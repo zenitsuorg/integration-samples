@@ -1,0 +1,95 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "properties": {
+    "ballerina": {
+      "type": "object",
+      "properties": {
+        "http": {
+          "type": "object",
+          "properties": {
+            "maxActiveConnections": {
+              "type": "integer",
+              "description": ""
+            },
+            "maxIdleConnections": {
+              "type": "integer",
+              "description": ""
+            },
+            "waitTime": {
+              "type": "number",
+              "description": ""
+            },
+            "maxActiveStreamsPerConnection": {
+              "type": "integer",
+              "description": ""
+            },
+            "minEvictableIdleTime": {
+              "type": "number",
+              "description": ""
+            },
+            "timeBetweenEvictionRuns": {
+              "type": "number",
+              "description": ""
+            },
+            "minIdleTimeInStaleState": {
+              "type": "number",
+              "description": ""
+            },
+            "timeBetweenStaleEviction": {
+              "type": "number",
+              "description": ""
+            },
+            "traceLogConsole": {
+              "type": "boolean",
+              "description": ""
+            },
+            "traceLogAdvancedConfig": {
+              "type": "object",
+              "properties": {
+                "console": {
+                  "type": "boolean"
+                },
+                "path": {
+                  "type": "string"
+                },
+                "host": {
+                  "type": "string"
+                },
+                "port": {
+                  "type": "integer"
+                }
+              },
+              "additionalProperties": false,
+              "required": [
+                "console"
+              ],
+              "name": "ballerina/http:2.11.11:TraceLogAdvancedConfiguration",
+              "description": ""
+            },
+            "accessLogConfig": {
+              "type": "object",
+              "properties": {
+                "console": {
+                  "type": "boolean"
+                },
+                "path": {
+                  "type": "string"
+                }
+              },
+              "additionalProperties": false,
+              "required": [
+                "console"
+              ],
+              "name": "ballerina/http:2.11.11:AccessLogConfiguration",
+              "description": ""
+            }
+          },
+          "additionalProperties": false
+        }
+      },
+      "additionalProperties": false
+    }
+  },
+  "additionalProperties": false
+}
