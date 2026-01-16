@@ -149,8 +149,6 @@ components:
       flows:
         implicit:
           authorizationUrl: https://test.com
-          scopes: 
-            read:books: Grants read access
   schemas:
     models.Book:
       type: object
